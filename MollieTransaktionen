@@ -37,7 +37,7 @@ set Vorlage_Datum to TextToDate(Spalte_001)
 
 ' BelegNr.
 if ( Spalte_006 <> "" )
-    set Vorlage_BelegNr to Spalte_006
+    'set Vorlage_BelegNr to Spalte_006
 endif
 
 ' Text
@@ -52,7 +52,7 @@ set Vorlage_Betrag to FTextToNumber(Replace(Spalte_004, ".",","))
 set Vorlage_Notizen to Spalte_008 + " D:" + Spalte_007
 
 ' Referenz
-set Vorlage_Referenz to Spalte_002
+set Vorlage_Referenz to Spalte_006
 
 ' ---------------------------------------------------------------------------------
 ' Optional: Belegvervollständigung
